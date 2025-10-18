@@ -1,77 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>querySelector & Styling Practice</title>
-  <style>
-    /* ===== CSS for Practice ===== */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 30px;
-    }
-
-    h1,
-    h2,
-    h3 {
-      color: darkblue;
-    }
-
-    .highlight {
-      background-color: yellow;
-      color: red;
-      font-weight: bold;
-    }
-
-    .done {
-      text-decoration: line-through;
-      color: gray;
-    }
-  </style>
-</head>
-
-<body>
-
-  <button id="colorBtn">Change</button>
-
-
-
-  <script>
-    let colors = ["red", "blue", "green", "orange", "purple"];
-
-    let index = 0;
-
-    document.getElementById("colorBtn").addEventListener("click", function () {
-      document.body.style.background = colors[index];
-      index++;
-      if (index >= colors.length) index = 0;
-
-    });
-
-
-    let userAnswers = ["X", "G", "P"];
-    let correctAnswers = ["A", "B", "C"];
-    let score = 0;
-
-    for (let i = 0; i < correctAnswers.length; i++) {
-      if (userAnswers[i] === correctAnswers[i]) {
-        score++;
-      }
-    }
-
-    alert("Your score is " + score);
-
-
-
-        let comments = ["Nice!", "Awesome!", "Amazing!", "😂😂"];
-
-        for (let i = 0; i < comments.length; i++) {
-            let commentBox = document.createElement("div");
-            commentBox.innerText = comments[i];
-            document.body.appendChild(commentBox);
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics First Year Lecture Series – Bilal Zia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
         }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #005580;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Physics First Year Lecture Series – Bilal Zia</h1>
 
-  </script>
+    <h2>Chapter 1: Measurements</h2>
+    <table>
+        <tr><th>Topic</th><th>Lecture Title</th><th>Lecture Link</th></tr>
+        <tr><td>Measurements</td><td>Lecture 01 | Dimensional Analysis</td><td><a href="https://www.youtube.com/embed/bHwWFqcexWs?rel=0">Link</a></td></tr>
+        <tr><td>Measurements</td><td>Lecture 02 | Significant Figures</td><td><a href="https://www.youtube.com/embed/N9AookWjq5k?rel=0">Link</a></td></tr>
+        <tr><td>Measurements</td><td>Lecture 03A | Uncertainty</td><td><a href="https://www.youtube.com/embed/kqDjqnP8mmo?rel=0">Link</a></td></tr>
+        <tr><td>Measurements</td><td>Lecture 03B | Uncertainty</td><td><a href="https://www.youtube.com/embed/O28tT3hBC60?rel=0">Link</a></td></tr>
+    </table>
+
+    <h2>Chapter 2: Vectors</h2>
+    <table>
+        <tr><th>Topic</th><th>Lecture Title</th><th>Lecture Link</th></tr>
+        <tr><td>Vectors</td><td>Lecture 01 | Basic Concepts</td><td><a href="https://www.youtube.com/embed/CPBPlOmZxSU?rel=0">Link</a></td></tr>
+        <tr><td>Vectors</td><td>Lecture 02 | Basic Concepts</td><td><a href="https://www.youtube.com/embed/xsNFdm9U5a4?rel=0">Link</a></td></tr>
+        <tr><td>Vectors</td><td>Lecture 03 | Vector Addition</td><td><a href="https://www.youtube.com/embed/OhudTdBqYWc?rel=0">Link</a></td></tr>
+        <tr><td>Vectors</td><td>Lecture 04 | Vector Addition</td><td><a href="https://www.youtube.com/embed/Zq7EtharNKU?rel=0">Link</a></td></tr>
+        <tr><td>Vectors</td><td>Lecture 05 | Vector Multiplication</td><td><a href="https://www.youtube.com/embed/C70at1fxDmY?rel=0">Link</a></td></tr>
+        <tr><td>Vectors</td><td>Lecture 06 | Vector Multiplication</td><td><a href="https://www.youtube.com/embed/u5tYVhwOp7M?rel=0">Link</a></td></tr>
+    </table>
+
+    <h2>Chapter 3: Kinematics</h2>
+    <table>
+        <tr><th>Topic</th><th>Lecture Title</th><th>Lecture Link</th></tr>
+        <tr><td>Kinematics</td><td>Lecture 01 | Kinematics</td><td><a href="https://www.youtube.com/embed/9J7nBcGefcA?rel=0">Link</a></td></tr>
+        <tr><td>Kinematics</td><td>Lecture 02 | Kinematics</td><td><a href="https://www.youtube.com/embed/yesUxC85FpI?rel=0">Link</a></td></tr>
+        <tr><td>Kinematics</td><td>Lecture 03 | Kinematics</td><td><a href="https://www.youtube.com/embed/f5r6izGsM60?rel=0">Link</a></td></tr>
+        <tr><td>Kinematics</td><td>Lecture 04 | Kinematics</td><td><a href="https://www.youtube.com/embed/bRmHqGOmfcQ?rel=0">Link</a></td></tr>
+    </table>
+
+    <h2>Chapter 4: Projectile Motion</h2>
+    <table>
+        <tr><th>Topic</th><th>Lecture Title</th><th>Lecture Link</th></tr>
+        <tr><td>Projectile Motion</td><td>Lecture 01 | Projectile Motion</td><td><a href="https://www.youtube.com/embed/rbEYP8ZeyDU?rel=0">Link</a></td></tr>
+        <tr><td>Projectile Motion</td><td>Lecture 02 | Projectile Motion</td><td><a href="https://www.youtube.com/embed/q7t9Yy7UGKo?rel=0">Link</a></td></tr>
+        <tr><td>Projectile Motion</td><td>Lecture 03 | Projectile Motion</td><td><a href="https://www.youtube.com/embed/xH8WvDuyvCY?rel=0">Link</a></td></tr>
+    </table>
+
+    <h2>Chapter 5: Dynamics</h2>
+    <table>
+        <tr><th>Topic</th><th>Lecture Title</th><th>Lecture Link</th></tr>
+        <tr><td>Dynamics</td><td>Lecture 01 | Dynamics</td><td><a href="https://www.youtube.com/embed/QJbpLSQCmFI?rel=0">Link</a></td></tr>
+        <tr><td>Dynamics</td><td>Lecture 02 | Dynamics</td><td><a href="https://www.youtube.com/embed/Idb5Tf1pNAw?rel=0">Link</a></td></tr>
+        <tr><td>Dynamics</td><td>Lecture 3A | Dynamics</td><td><a href="https://www.youtube.com/embed/MoMSX-JDIoQ?rel=0">Link</a></td></tr>
+        <tr><td>Dynamics</td><td>Lecture 3B | Dynamics</td><td><a href="https://www.youtube.com/embed/qsazLV-BJ-A?rel=0">Link</a></td></tr>
+    </table>
+
+    <h2>Chapter 6: Circular Motion</h2>
+    <table>
+        <tr><th>Topic</th><th>Lecture Title</th><th>Lecture Link</th></tr>
+        <tr><td>Circular Motion</td><td>Lecture 01 | Circular Motion</td><td><a href="https://www.youtube.com/embed/Esq5637B8-M?rel=0">Link</a></td></tr>
+        <tr><td>Circular Motion</td><td>Lecture 02 | Circular Motion</td><td><a href="https://www.youtube.com/embed/Wnzo0JhYAr8?rel=0">Link</a></td></tr>
+        <tr><td>Circular Motion</td><td>Lecture 03 | Rotational Motion</td><td><a href="https://www.youtube.com/embed/713wcCXzYAw?rel=0">Link</a></td></tr>
+        <tr><td>Circular Motion</td><td>Lecture 04 | Rotational Motion</td><td><a href="https://www.youtube.com/embed/JkRydPxgQ-g?rel=0">Link</a></td></tr>
+        <tr><td>Circular Motion</td><td>Lecture 05 | Gravitation</td><td><a href="https://www.youtube.com/embed/LBxmfIXd3UY?rel=0">Link</a></td></tr>
+        <tr><td>Circular Motion</td><td>Lecture 06 | Gravitation</td><td><a href="https://www.youtube.com/embed/8jW1vinLuF4?rel=0">Link</a></td></tr>
+        <tr><td>Circular Motion</td><td>Lecture 07 | Circular Motion</td><td><a href="https://www.youtube.com/embed/l2v7sYLDasc?rel=0">Link</a></td></tr>
+    </table>
+
+    <h2>Chapter 7: Work Energy Power</h2>
+    <table>
+        <tr><th>Topic</th><th>Lecture Title</th><th>Lecture Link</th></tr>
+        <tr><td>Work Energy Power</td><td>Lecture 01</td><td><a href="https://www.youtube.com/embed/-gj_WrmaQoA?rel=0">Link</a></td></tr>
+        <tr><td>Work Energy Power</td><td>Lecture 02</td><td><a href="https://www.youtube.com/embed/mqehvp8slWs?rel=0">Link</a></td></tr>
+        <tr><td>Work Energy Power</td><td>Lecture 03</td><td><a href="https://www.youtube.com/embed/huMdorMudGg?rel=0">Link</a></td></tr>
+    </table>
+
+    <h2>Chapter 8: Oscillations (SHM)</h2>
+    <table>
+        <tr><th>Topic</th><th>Lecture Title</th><th>Lecture Link</th></tr>
+        <tr><td>Oscillations (SHM)</td><td>Lecture 01</td><td><a href="https://www.youtube.com/embed/nV1gPhbGd-w?rel=0">Link</a></td></tr>
+        <tr><td>Oscillations (SHM)</td><td>Lecture 02</td><td><a href="https://www.youtube.com/embed/8rkTkCxcc7A?rel=0">Link</a></td></tr>
+        <tr><td>Oscillations (SHM)</td><td>Lecture 03</td><td><a href="https://www.youtube.com/embed/tz3uC2DKt_4?rel=0">Link</a></td></tr>
+    </table>
+
+    <h2>Chapter 9: Waves (Acoustics)</h2>
+    <table>
+        <tr><th>Topic</th><th>Lecture Title</th><th>Lecture Link</th></tr>
+        <tr><td>Waves (Acoustics)</td><td>Lecture 01</td><td><a href="https://www.youtube.com/embed/eR5n_MWQ-Q0?rel=0">Link</a></td></tr>
+        <tr><td>Waves (Acoustics)</td><td>Lecture 02</td><td><a href="https://www.youtube.com/embed/QPOlRtnwrmA?rel=0">Link</a></td></tr>
+        <tr><td>Waves (Acoustics)</td><td>Lecture 03</td><td><a href="https://www.youtube.com/embed/N11o93Z3Rlg?rel=0">Link</a></td></tr>
+        <tr><td>Waves (Acoustics)</td><td>Lecture 04</td><td><a href="https://www.youtube.com/embed/2loClNMvQ3o?rel=0">Link</a></td></tr>
+    </table>
+
+    <h2>Chapter 10: Physical Optics</h2>
+    <table>
+        <tr><th>Topic</th><th>Lecture Title</th><th>Lecture Link</th></tr>
+        <tr><td>Physical Optics</td><td>Lecture 01 | YDSE</td><td><a href="https://www.youtube.com/embed/xyrD2-fLDxo?rel=0">Link</a></td></tr>
+        <tr><td>Physical Optics</td><td>Lecture 02</td><td><a href="https://www.youtube.com/embed/2hxKYKa9k3k?rel=0">Link</a></td></tr>
+        <tr><td>Physical Optics</td><td>Lecture 03</td><td><a href="https://www.youtube.com/embed/3gVrbeNAqcQ?rel=0">Link</a></td></tr>
+    </table>
+
+    <h2>Chapter 11: Optical Instruments</h2>
+    <table>
+        <tr><th>Topic</th><th>Lecture Title</th><th>Lecture Link</th></tr>
+        <tr><td>Optical Instruments</td><td>Lecture 01</td><td><a href="https://www.youtube.com/embed/Hab68oq3AL0?rel=0">Link</a></td></tr>
+        <tr><td>Optical Instruments</td><td>Lecture 02</td><td><a href="https://www.youtube.com/embed/BJzevLKkqiw?rel=0">Link</a></td></tr>
+    </table>
+
+    <h2>Chapter 12: Fluid Mechanics</h2>
+    <table>
+        <tr><th>Topic</th><th>Lecture Title</th><th>Lecture Link</th></tr>
+        <tr><td>Fluid Mechanics</td><td>Lecture 01</td><td><a href="https://www.youtube.com/embed/KFesiRwTG7E?rel=0">Link</a></td></tr>
+        <tr><td>Fluid Mechanics</td><td>Lecture 02</td><td><a href="https://www.youtube.com/embed/XKKVpUEGGPI?rel=0">Link</a></td></tr>
+        <tr><td>Fluid Mechanics</td><td>Lecture 03</td><td><a href="https://www.youtube.com/embed/cWN8-IgsQZM?rel=0">Link</a></td></tr>
+    </table>
 </body>
-
 </html>
