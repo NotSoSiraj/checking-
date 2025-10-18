@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>querySelector & Styling Practice</title>
+  <style>
+    /* ===== CSS for Practice ===== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: darkblue;
+    }
+
+    .highlight {
+      background-color: yellow;
+      color: red;
+      font-weight: bold;
+    }
+
+    .done {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button id="colorBtn">Change</button>
+
+
+
+  <script>
+    let colors = ["red", "blue", "green", "orange", "purple"];
+
+    let index = 0;
+
+    document.getElementById("colorBtn").addEventListener("click", function () {
+      document.body.style.background = colors[index];
+      index++;
+      if (index >= colors.length) index = 0;
+
+    });
+
+
+    let userAnswers = ["X", "G", "P"];
+    let correctAnswers = ["A", "B", "C"];
+    let score = 0;
+
+    for (let i = 0; i < correctAnswers.length; i++) {
+      if (userAnswers[i] === correctAnswers[i]) {
+        score++;
+      }
+    }
+
+    alert("Your score is " + score);
+
+
+
+        let comments = ["Nice!", "Awesome!", "Amazing!", "😂😂"];
+
+        for (let i = 0; i < comments.length; i++) {
+            let commentBox = document.createElement("div");
+            commentBox.innerText = comments[i];
+            document.body.appendChild(commentBox);
+        }
+
+  </script>
+</body>
+
+</html>
